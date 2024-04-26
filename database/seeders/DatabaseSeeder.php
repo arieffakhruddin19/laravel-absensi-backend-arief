@@ -21,5 +21,18 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@mail.com',
             'password' => Hash::make('12345678'),
         ]);
+
+
+
+        \App\Models\Company::create([
+            'name' => 'PT. FIC 16',
+            'email' => 'company1@mail.com',
+            'address' => 'Address 1',
+            'latitude' => '-7.747024',
+            'longitude' => '110.156545',
+            'radius_km' => '0.5',
+            'time_in' => '08:00',
+            'time_out' => '17:00',
+        ]);
     }
 }
