@@ -31,6 +31,21 @@
             </li>
 
 
+            <li class="{{ Request::is('attendances*') ? 'active' : '' }}">
+                <a class="nav-link"
+                    href="{{ route('attendances.index') }}"><i class="far fa-user">
+                    </i> <span>Attendances</span>
+                </a>
+            </li>
+
+            <li class="{{ Request::is('permissions*') ? 'active' : '' }}">
+                <a class="nav-link"
+                    href="{{ route('permissions.index') }}"><i class="far fa-user">
+                    </i> <span>Permission</span>
+                </a>
+            </li>
+
+
 
 
 
